@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
-// 🟢 Signup
+// 🟢 Signup this sign up
 //home page
 exports.signup = async (req, res) => {
   try {
