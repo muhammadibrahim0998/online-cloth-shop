@@ -5,6 +5,7 @@ const User = require("../models/User");
 // 🟢 Signup
 //home page
 //login page
+// da nsadjkhfhjkdsahfjldshfvdsajlh
 exports.signup = async (req, res) => {
   try {
     const { username, email, password } = req.body;
