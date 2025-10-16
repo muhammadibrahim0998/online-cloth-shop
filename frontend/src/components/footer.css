@@ -1,0 +1,121 @@
+/* === FOOTER CONTAINER === */
+.footer-container {
+background: linear-gradient(135deg, #e0f7fa, #fce4ec, #fff3e0);
+  color: #333;
+  padding: 60px 8% 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 -5px 20px rgba(194, 24, 91, 0.1);
+}
+
+/* === TOP SECTION === */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* === BRAND === */
+.footer-brand h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c2185b;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.footer-socials a {
+  margin-right: 14px;
+  font-size: 1.2rem;
+  color: #c2185b;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #f06292;
+  transform: scale(1.15);
+}
+
+/* === LINKS === */
+.footer-links h3,
+.footer-contact h3,
+.footer-map h3 {
+  font-size: 1.2rem;
+  color: #c2185b;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #c2185b;
+}
+
+/* === CONTACT === */
+.footer-contact p {
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.footer-contact svg {
+  color: #c2185b;
+}
+
+/* === MAP === */
+.footer-map iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(194, 24, 91, 0.2);
+}
+
+/* === BOTTOM SECTION === */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(194, 24, 91, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 5% 20px;
+  }
+
+  .footer-top {
+    gap: 30px;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.5rem;
+  }
+}

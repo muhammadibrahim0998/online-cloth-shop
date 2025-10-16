@@ -1,0 +1,141 @@
+/* === LAYOUT === */
+.women-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec, #fff3e0);
+  padding: 60px 6%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: none;
+}
+
+/* === TITLE === */
+.women-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #c2185b;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.women-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* === GRID === */
+.women-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* === CARD === */
+.women-card {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(194, 24, 91, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.women-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(194, 24, 91, 0.25);
+}
+
+/* === IMAGE === */
+.women-img-container {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+}
+
+.women-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* === OVERLAY === */
+.women-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 105, 180, 0.1), rgba(244, 205, 221, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.women-img-container:hover .women-overlay {
+  opacity: 1;
+}
+
+/* === ADD TO CART BUTTON === */
+.add-btn {
+  background: linear-gradient(135deg, #c2185b, #f06292);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(240, 98, 146, 0.3);
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #880e4f, #f06292);
+  transform: scale(1.05);
+}
+
+/* === DETAILS === */
+.women-details {
+  padding: 20px 15px 30px;
+  text-align: center;
+}
+
+.women-details h3 {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #c2185b;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .women-title {
+    font-size: 2.2rem;
+  }
+
+  .women-subtitle {
+    font-size: 1rem;
+  }
+
+  .women-img-container {
+    height: 280px;
+  }
+
+  .add-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}

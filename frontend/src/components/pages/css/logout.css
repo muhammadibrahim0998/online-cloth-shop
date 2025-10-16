@@ -1,0 +1,101 @@
+/* ======= Logout Page (2025 Modern Glassmorphism) ======= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.logout-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec, #fff8e1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease;
+}
+
+.logout-card {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(16px);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 420px;
+  width: 90%;
+  animation: popIn 0.8s ease;
+}
+
+.logout-icon {
+  font-size: 3.5rem;
+  color: #ff4081;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+.logout-card h2 {
+  font-size: 1.6rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.logout-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.logout-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #43a047;
+  font-weight: 500;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: inline-flex;
+}
+
+.check-icon {
+  font-size: 1.2rem;
+  color: #43a047;
+}
+
+/* ======= Animations ======= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 480px) {
+  .logout-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .logout-icon {
+    font-size: 2.8rem;
+  }
+
+  .logout-card h2 {
+    font-size: 1.4rem;
+  }
+}

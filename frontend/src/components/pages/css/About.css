@@ -1,0 +1,236 @@
+/* === LAYOUT === */
+.about-container {
+  font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec, #fff3e0);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* === HERO === */
+.about-hero {
+  text-align: center;
+  padding: 100px 8% 60px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: #c2185b;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 span {
+  background: linear-gradient(135deg, #c2185b, #f06292);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* === STORY === */
+.story-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.story-text h2 {
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.story-text p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.story-img {
+  flex: 1;
+  min-width: 320px;
+}
+
+.story-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(194, 24, 91, 0.2);
+}
+
+/* === MISSION === */
+.mission-section {
+  text-align: center;
+  padding: 80px 6%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  margin: 60px 5%;
+  box-shadow: 0 12px 35px rgba(194, 24, 91, 0.1);
+}
+
+.mission-section h2 {
+  font-size: 2.2rem;
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.mission-section p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  width: 270px;
+  box-shadow: 0 10px 25px rgba(194, 24, 91, 0.15);
+  transition: all 0.3s ease;
+}
+
+.mission-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.mission-card h4 {
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.mission-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* === TEAM === */
+.team-section {
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.team-section h2 {
+  font-size: 2.3rem;
+  color: #c2185b;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(194, 24, 91, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #f06292;
+}
+
+.team-card h4 {
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* === CTA === */
+.cta-section {
+  text-align: center;
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #c2185b, #f06292);
+  color: #fff;
+  border-radius: 40px 40px 0 0;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-section h2 span {
+  color: #ffe4ec;
+}
+
+.cta-section p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+  color: #fff8fa;
+}
+
+.shop-btn {
+  background: #fff;
+  color: #c2185b;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.shop-btn:hover {
+  background: #f8f8f8;
+  transform: scale(1.08);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .story-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-img img {
+    width: 100%;
+  }
+
+  .mission-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
